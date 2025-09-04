@@ -59,7 +59,7 @@ class LiteralScope extends Scope
     /**
      * {@inheritdoc}
      */
-    public function generate(string &$result, GeneratorInterface $generator): void
+    public function generate(?string &$result, GeneratorInterface $generator): void
     {
         if ($this->literals->isEmpty()) {
             throw new GeneratorException('There are no literals to choose from in this scope');

@@ -29,7 +29,7 @@ class Scope extends Node implements ContextInterface, RepeatInterface, Alternate
     /**
      * {@inheritdoc}
      */
-    public function generate(string &$result, GeneratorInterface $generator): void
+    public function generate(?string &$result, GeneratorInterface $generator): void
     {
         if ($this->isEmpty()) {
             // Revert message to match original test's expectation
